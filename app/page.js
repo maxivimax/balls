@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import YMapsWrapper from "./YMapsWrapper";
 
 async function fetchPoints() {
-  const res = await fetch(`http://balls.princessshine.ru/addresses_data.json`);
+  const res = await fetch(`https://balls.princessshine.ru/addresses_data.json`);
   if (!res.ok) throw new Error("Failed to load data");
   return res.json();
 }
